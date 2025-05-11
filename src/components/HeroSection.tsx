@@ -38,12 +38,16 @@ const HeroSection = () => {
             
             <div className="hidden lg:block">
               <div className="flex gap-4">
-                <Button className="bg-nursing-navy text-white hover:bg-opacity-90 px-8 py-2">
-                  Learn More
-                </Button>
-                <Button variant="outline" className="border-nursing-navy text-nursing-navy hover:bg-nursing-navy hover:text-white px-8 py-2">
-                  View Services
-                </Button>
+                <a href="/pricing#order-form">
+                  <Button className="bg-nursing-navy text-white hover:bg-opacity-90 px-8 py-2">
+                    Order Now
+                  </Button>
+                </a>
+                <a href="/services">
+                  <Button variant="outline" className="border-nursing-navy text-nursing-navy hover:bg-nursing-navy hover:text-white px-8 py-2">
+                    View Services
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

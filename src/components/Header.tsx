@@ -39,9 +39,11 @@ const Header = () => {
             <Link to="/blog" className="text-nursing-navy hover:text-nursing-blue transition-colors">
               Blog
             </Link>
-            <Button className="bg-nursing-blue text-white hover:bg-nursing-navy">
-              Order Now
-            </Button>
+            <a href="/pricing#order-form">
+              <Button className="bg-nursing-blue text-white hover:bg-nursing-navy">
+                Order Now
+              </Button>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -104,12 +106,17 @@ const Header = () => {
               >
                 Blog
               </Link>
-              <Button 
-                className="bg-nursing-blue text-white hover:bg-nursing-navy w-full"
+              <a 
+                href="/pricing#order-form"
+                className="block"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Order Now
-              </Button>
+                <Button 
+                  className="bg-nursing-blue text-white hover:bg-nursing-navy w-full"
+                >
+                  Order Now
+                </Button>
+              </a>
             </nav>
           </div>
         )}
