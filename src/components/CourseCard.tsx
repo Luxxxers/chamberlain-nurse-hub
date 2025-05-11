@@ -17,7 +17,7 @@ const CourseCard = ({ title, description, duration, level }: CourseCardProps) =>
       <CardHeader className="bg-nursing-navy text-white pb-3">
         <div className="flex items-center gap-2">
           <GraduationCap className="h-5 w-5" />
-          <CardTitle className="text-lg md:text-xl font-bold">{title}</CardTitle>
+          <CardTitle className="text-lg md:text-xl font-bold text-white">{title}</CardTitle>
         </div>
         <CardDescription className="text-white/90 font-medium">{level} Level</CardDescription>
       </CardHeader>
