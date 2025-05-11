@@ -11,13 +11,23 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { Edit, Settings, User, Table, Database } from 'lucide-react';
+import { Edit, Settings, User, Table, Database, LayoutDashboard, Home } from 'lucide-react';
 
 const menuItems = [
   {
     title: "Dashboard",
     url: "/admin",
-    icon: Database,
+    icon: LayoutDashboard,
+  },
+  {
+    title: "Edit Hero",
+    url: "/admin/hero",
+    icon: Home,
+  },
+  {
+    title: "Edit CTA",
+    url: "/admin/cta",
+    icon: Edit,
   },
   {
     title: "Edit Services",

@@ -3,7 +3,7 @@ import React from 'react';
 import { SidebarTrigger } from '@/components/ui/sidebar';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Settings } from 'lucide-react';
+import { Settings, LogIn } from 'lucide-react';
 
 const AdminHeader = () => {
   return (
@@ -14,6 +14,11 @@ const AdminHeader = () => {
           <h1 className="text-xl font-bold text-nursing-navy">NursingPro Admin</h1>
         </div>
         <div className="flex items-center space-x-4">
+          <Link to="/admin">
+            <Button variant="ghost" size="sm">
+              Dashboard
+            </Button>
+          </Link>
           <Link to="/settings">
             <Button variant="ghost" size="icon">
               <Settings className="h-5 w-5" />
