@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Check } from 'lucide-react';
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
 const PricingPage = () => {
   return (
@@ -23,9 +24,96 @@ const PricingPage = () => {
           </div>
         </section>
 
-        {/* Pricing Plans */}
+        {/* Pricing Table */}
         <section className="py-12 bg-nursing-lightBlue/10">
           <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-6 text-nursing-navy text-center">Pricing Per Page</h2>
+            <p className="text-center mb-8 text-nursing-navy/80 max-w-2xl mx-auto">
+              Our pricing is transparent and depends on your academic level and how soon you need your assignment. Prices shown are per page.
+            </p>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+              <Table>
+                <TableCaption>Pricing per page in USD ($)</TableCaption>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="bg-nursing-navy text-white font-medium">Deadline</TableHead>
+                    <TableHead className="bg-nursing-navy text-white text-center font-medium">Undergraduate</TableHead>
+                    <TableHead className="bg-nursing-navy text-white text-center font-medium">Graduate</TableHead>
+                    <TableHead className="bg-nursing-navy text-white text-center font-medium">Doctoral</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow>
+                    <TableCell className="font-medium bg-nursing-lightBlue/10">3 Hours</TableCell>
+                    <TableCell className="text-center">$25</TableCell>
+                    <TableCell className="text-center">$30</TableCell>
+                    <TableCell className="text-center">$35</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium bg-nursing-lightBlue/10">6 Hours</TableCell>
+                    <TableCell className="text-center">$22</TableCell>
+                    <TableCell className="text-center">$28</TableCell>
+                    <TableCell className="text-center">$33</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium bg-nursing-lightBlue/10">12 Hours</TableCell>
+                    <TableCell className="text-center">$20</TableCell>
+                    <TableCell className="text-center">$25</TableCell>
+                    <TableCell className="text-center">$30</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium bg-nursing-lightBlue/10">24 Hours</TableCell>
+                    <TableCell className="text-center">$18</TableCell>
+                    <TableCell className="text-center">$22</TableCell>
+                    <TableCell className="text-center">$28</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium bg-nursing-lightBlue/10">48 Hours</TableCell>
+                    <TableCell className="text-center">$15</TableCell>
+                    <TableCell className="text-center">$20</TableCell>
+                    <TableCell className="text-center">$25</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium bg-nursing-lightBlue/10">72 Hours</TableCell>
+                    <TableCell className="text-center">$12</TableCell>
+                    <TableCell className="text-center">$18</TableCell>
+                    <TableCell className="text-center">$22</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="font-medium bg-nursing-lightBlue/10">Normal (>72 Hours)</TableCell>
+                    <TableCell className="text-center">$10</TableCell>
+                    <TableCell className="text-center">$15</TableCell>
+                    <TableCell className="text-center">$20</TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </div>
+
+            <div className="bg-nursing-navy/5 rounded-lg p-6 mb-6">
+              <h3 className="text-xl font-semibold mb-3 text-nursing-navy">Need to calculate your total?</h3>
+              <p className="text-nursing-navy/80 mb-4">
+                Total price = Price per page × Number of pages
+              </p>
+              <p className="text-nursing-navy/80">
+                <strong>Example:</strong> A 5-page undergraduate paper with a 48-hour deadline would cost $15 × 5 = $75
+              </p>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link to="/#order-form">
+                <Button className="bg-nursing-blue hover:bg-nursing-navy text-white px-8 py-2">
+                  Order Now
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Plans */}
+        <section className="py-12 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-10 text-nursing-navy text-center">Service Packages</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Undergraduate Plan */}
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
