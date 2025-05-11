@@ -30,6 +30,9 @@ const Header = () => {
             <Link to="/services" className="text-nursing-navy hover:text-nursing-blue transition-colors">
               Services
             </Link>
+            <Link to="/courses" className="text-nursing-navy hover:text-nursing-blue transition-colors">
+              Courses
+            </Link>
             <Link to="/pricing" className="text-nursing-navy hover:text-nursing-blue transition-colors">
               Pricing
             </Link>
@@ -79,6 +82,13 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
+              </Link>
+              <Link 
+                to="/courses" 
+                className="text-nursing-navy hover:text-nursing-blue transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Courses
               </Link>
               <Link 
                 to="/pricing" 
