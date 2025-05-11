@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 // For now we're using static content that matches what would be in the admin panel
 const ctaContent = {
   heading: 'Ready to Excel in Your Nursing Assignments?',
-  subtext: 'Don't let difficult assignments stress you out. Our team of expert nursing professionals is ready to help you achieve academic excellence.',
+  subtext: "Don't let difficult assignments stress you out. Our team of expert nursing professionals is ready to help you achieve academic excellence.",
   primaryButtonText: 'Get Started Today',
   secondaryButtonText: 'View Pricing',
   features: '24/7 Customer Support • Secure Payment Options • Money-Back Guarantee'
