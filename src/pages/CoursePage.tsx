@@ -50,13 +50,15 @@ const CoursePage = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1 bg-nursing-white">
-        <section className="bg-gradient-to-b from-nursing-blue to-nursing-navy text-white py-12">
+        <section className="bg-gradient-to-b from-nursing-blue to-nursing-navy text-white py-16">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-center mb-6">
-              <School className="h-10 w-10 mr-3" />
-              <h1 className="text-3xl md:text-4xl font-bold">Nursing Programs</h1>
+              <School className="h-12 w-12 mr-4" />
+              <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-md">
+                Nursing Programs
+              </h1>
             </div>
-            <p className="text-center max-w-3xl mx-auto text-lg">
+            <p className="text-center max-w-3xl mx-auto text-lg md:text-xl font-medium text-white drop-shadow-sm">
               Discover our comprehensive nursing units and programs designed to prepare you for 
               excellence in healthcare. Our curriculum blends theoretical knowledge with hands-on 
               clinical experience to develop skilled, compassionate nursing professionals.
@@ -65,7 +67,7 @@ const CoursePage = () => {
         </section>
 
         <section className="py-12 container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-nursing-navy text-center mb-8">
+          <h2 className="text-2xl md:text-4xl font-bold text-nursing-navy text-center mb-8 drop-shadow-sm">
             Available Nursing Units
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -83,10 +85,10 @@ const CoursePage = () => {
 
         <section className="py-12 bg-nursing-light">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-nursing-navy mb-4">
+            <h2 className="text-2xl md:text-4xl font-bold text-nursing-navy mb-4 drop-shadow-sm">
               Ready to Start Your Journey in Nursing?
             </h2>
-            <p className="max-w-2xl mx-auto mb-8 text-gray-700">
+            <p className="max-w-2xl mx-auto mb-8 text-gray-700 text-lg">
               Our admission counselors are available to answer your questions and help you find 
               the perfect program for your career goals.
             </p>
