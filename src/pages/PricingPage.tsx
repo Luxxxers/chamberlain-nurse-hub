@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -81,7 +80,7 @@ const PricingPage = () => {
                     <TableCell className="text-center">$22</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium bg-nursing-lightBlue/10">Normal (>72 Hours)</TableCell>
+                    <TableCell className="font-medium bg-nursing-lightBlue/10">Normal (&gt;72 Hours)</TableCell>
                     <TableCell className="text-center">$10</TableCell>
                     <TableCell className="text-center">$15</TableCell>
                     <TableCell className="text-center">$20</TableCell>
